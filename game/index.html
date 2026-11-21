@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Vault — a quiet heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0a0910;
+    min-height: 100%;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  #game {
+    width: 960px;
+    height: 640px;
+    max-width: 96vw;
+    max-height: 78vh;
+    image-rendering: auto;
+    border: 2px solid #4a4266;
+    border-radius: 8px;
+    background: #0a0910;
+    cursor: crosshair;
+  }
+  .note {
+    color: #9a94b0;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .note b { color: #e8e4f5; }
+</style>
+</head>
+<body>
+  <canvas id="game" width="960" height="640"></canvas>
+  <div class="note">
+    <b>Ember Vault</b> — slip past the guards, take the ember crystals, reach the green EXIT unseen.<br>
+    WASD / arrows move &nbsp;·&nbsp; Shift sneaks &nbsp;·&nbsp; Click throws a pebble &nbsp;·&nbsp; M mutes sound
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
